@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Definition Finder",
+    "version": "1.0",
+    "permissions": ["activeTab", "contextMenus","storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        
+       
+      }
+    },
+    "icons": {
+      "16": "ProjectIcon.png",
+      "48": "ProjectIcon.png",
+      "128": "ProjectIcon.png"
+    },
+
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html", "popup.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+
+  }
+  
