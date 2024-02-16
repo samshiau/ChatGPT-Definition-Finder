@@ -9,9 +9,9 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "sendToChatGPT") {
       const selectedText = info.selectionText;
-      // Define the local server URL
+     
       const serverUrl = 'http://localhost:3000/get-definition';
-      // Send the selected text to your local server using the Fetch API
+      
       fetch(serverUrl, {
         method: 'POST',
         headers: {
@@ -21,7 +21,7 @@ chrome.runtime.onInstalled.addListener(() => {
       })
       .then(response => response.json())
       .then(data => {
-        // Process the data received from the server here
+       
         console.log('i am here')
         console.log(data.definition)
 
