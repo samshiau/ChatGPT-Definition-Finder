@@ -36,7 +36,7 @@ chrome.runtime.onInstalled.addListener(() => {
 
         console.log('Trying to save info into storage');
 
-        chrome.storage.local.set({ definition: data.definition }, () => {
+        chrome.storage.local.set({ definition: data.definition, selectedText: selectedText}, () => {
           console.log('Server response is saved.');});
 
       })
