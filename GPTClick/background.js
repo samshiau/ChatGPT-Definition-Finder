@@ -31,7 +31,7 @@ chrome.runtime.onInstalled.addListener(() => {
           url: 'popup.html',
           type: 'popup',
           width: 400,
-          height: 400
+          height: 325
         });
 
         console.log('Trying to save info into storage');
